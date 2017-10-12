@@ -1,0 +1,14 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "taskName": "run-tomcat",
+            "type": "shell",
+            "command": "MAVEN_OPTS=\"$MAVEN_OPTS -agentlib:jdwp=transport=dt_socket,address=8000,server=y,suspend=n\" ./mvnw tomcat7:run",
+            "group": "build",
+            "problemMatcher": []
+        }
+    ]
+}
